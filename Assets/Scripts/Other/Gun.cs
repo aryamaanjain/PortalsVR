@@ -12,6 +12,9 @@ public class Gun : MonoBehaviour
     public Transform portalBlue;
     int currentPortal = 0;  // 0 Red, 1 Blue
 
+    public string currentSurfaceRed;
+    public string currentSurfaceBlue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,7 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            // Debug.Log(hit.transform.name);
 
             if (hit.transform.name == "Wall 1")
             {
@@ -45,6 +48,7 @@ public class Gun : MonoBehaviour
                 {
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                    currentSurfaceRed = "Wall 1";
                     currentPortal = 1;
                 }
                 else
@@ -52,6 +56,7 @@ public class Gun : MonoBehaviour
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalBlue.transform.Rotate(portalBlue.transform.up, 180);
+                    currentSurfaceBlue = "Wall 1";
                     currentPortal = 0;
                 }
             }
@@ -68,12 +73,14 @@ public class Gun : MonoBehaviour
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalRed.transform.Rotate(portalRed.transform.up, 180);
+                    currentSurfaceRed = "Wall 2";
                     currentPortal = 1;
                 }
                 else
                 {
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                    currentSurfaceBlue = "Wall 2";
                     currentPortal = 0;
                 }
             }
@@ -90,6 +97,7 @@ public class Gun : MonoBehaviour
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalRed.transform.Rotate(portalRed.transform.up, 90);
+                    currentSurfaceRed = "Wall 3";
                     currentPortal = 1;
                 }
                 else
@@ -97,6 +105,7 @@ public class Gun : MonoBehaviour
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalBlue.transform.Rotate(portalBlue.transform.up, -90);
+                    currentSurfaceBlue = "Wall 3";
                     currentPortal = 0;
                 }
             }
@@ -113,6 +122,7 @@ public class Gun : MonoBehaviour
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalRed.transform.Rotate(portalRed.transform.up, -90);
+                    currentSurfaceRed = "Wall 4";
                     currentPortal = 1;
                 }
                 else
@@ -120,6 +130,7 @@ public class Gun : MonoBehaviour
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalBlue.transform.Rotate(portalBlue.transform.up, 90);
+                    currentSurfaceBlue = "Wall 4";
                     currentPortal = 0;
                 }
             }
@@ -136,6 +147,7 @@ public class Gun : MonoBehaviour
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalRed.transform.Rotate(portalRed.transform.right, -90);
+                    currentSurfaceRed = "Roof";
                     currentPortal = 1;
                 }
                 else
@@ -143,6 +155,7 @@ public class Gun : MonoBehaviour
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalBlue.transform.Rotate(portalBlue.transform.right, 90);
+                    currentSurfaceBlue = "Roof";
                     currentPortal = 0;
                 }
             }
@@ -159,6 +172,7 @@ public class Gun : MonoBehaviour
                     portalRed.transform.position = new Vector3(px, py, pz);
                     portalRed.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalRed.transform.Rotate(portalRed.transform.right, 90);
+                    currentSurfaceRed = "Floor";
                     currentPortal = 1;
                 }
                 else
@@ -166,6 +180,7 @@ public class Gun : MonoBehaviour
                     portalBlue.transform.position = new Vector3(px, py, pz);
                     portalBlue.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     portalBlue.transform.Rotate(portalBlue.transform.right, -90);
+                    currentSurfaceBlue = "Floor";
                     currentPortal = 0;
                 }
             }

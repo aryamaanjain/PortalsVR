@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1535381019623673787}
   - component: {fileID: 1535381019623673733}
   - component: {fileID: 138946442086234503}
+  - component: {fileID: 944561168842797634}
+  - component: {fileID: 1204961768549404706}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -94,6 +96,39 @@ MonoBehaviour:
   m_TrackingOriginMode: 1
   m_TrackingSpace: 3
   m_CameraYOffset: 1.36144
+--- !u!114 &944561168842797634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535381019623673784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396d09dcd80a9e64a82a3c7b28de4129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalBlue: {fileID: 0}
+  portalRed: {fileID: 0}
+  gunScript: {fileID: 0}
+  colliderFloor: {fileID: 0}
+  colliderRoof: {fileID: 0}
+  colliderWall1: {fileID: 0}
+  colliderWall2: {fileID: 0}
+  colliderWall3: {fileID: 0}
+  colliderWall4: {fileID: 0}
+--- !u!114 &1204961768549404706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535381019623673784}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddece56febc0acb4f991fe59ef36fa34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1535381020191089684
 GameObject:
   m_ObjectHideFlags: 0

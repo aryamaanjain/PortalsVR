@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\Core\PortalTraveller.cs" />
     <Compile Include="Assets\Scripts\Other\FPSController.cs" />
     <Compile Include="Assets\Scripts\Other\Gun.cs" />
+    <Compile Include="Assets\Scripts\Other\PortalCollider.cs" />
+    <Compile Include="Assets\Scripts\Other\SavePlayer.cs" />
     <None Include="Assets\Scripts\Core\Shaders\Portal.shader" />
     <None Include="Assets\Scripts\Core\Shaders\Slice.shader" />
     <None Include="Assets\Scripts\Other\Shaders\CloudTest.shader" />
