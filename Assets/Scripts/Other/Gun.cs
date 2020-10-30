@@ -15,6 +15,8 @@ public class Gun : MonoBehaviour
     public string currentSurfaceRed;
     public string currentSurfaceBlue;
 
+    public ParticleSystem muzzleFlash;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        muzzleFlash.Play();
+
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {

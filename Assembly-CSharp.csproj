@@ -71,10 +71,9 @@
     <Compile Include="Assets\Scripts\Other\Gun.cs" />
     <Compile Include="Assets\Scripts\Other\PortalCollider.cs" />
     <Compile Include="Assets\Scripts\Other\SavePlayer.cs" />
+    <Compile Include="Assets\Scripts\Other\SpatialEnlargement.cs" />
     <None Include="Assets\Scripts\Core\Shaders\Portal.shader" />
     <None Include="Assets\Scripts\Core\Shaders\Slice.shader" />
-    <None Include="Assets\Scripts\Other\Shaders\CloudTest.shader" />
-    <None Include="Assets\Scripts\Other\Shaders\SkyDome.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
